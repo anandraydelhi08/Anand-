@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎀 Happy Raksha Bandhan 🎀</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffe6f0;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .container {
+      border: 3px dashed #e75480;
+      border-radius: 20px;
+      padding: 30px;
+      background-color: #fff0f5;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 200px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎀 Happy Raksha Bandhan 🎀</h1>
+    <p id="message">Click below to tie Rakhi 🎉</p>
+    <button onclick="celebrate()">Tie Rakhi</button>
+    
+    <img id="rakhi" 
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rakhi_with_Tilak.jpg/320px-Rakhi_with_Tilak.jpg" 
+         alt="Rakhi" 
+         hidden>
+  </div>
+
+  <script>
+    function celebrate() {
+      document.getElementById("message").innerText =
+        "👧 Sister tied Rakhi... 🧑 Brother gave sweets 🎁\n💖 Happy Raksha Bandhan 💖";
+      document.getElementById("rakhi").hidden = false;
+    }
+  </script>
+</body>
+</html>
